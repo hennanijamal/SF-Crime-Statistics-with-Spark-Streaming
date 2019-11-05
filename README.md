@@ -39,14 +39,14 @@ This project requires creating topics, starting Zookeeper and Kafka server, and 
 
 `bin/kafka-server-start.sh config/server.properties`
 
-
-- We get the `data police-department-calls-for-service.csv` and have to convert to `json` format.  
-
 - next step was to complete the `data_producer.py` file.
 
 - The server is started by running
 
 `python data_prodcuer.py`
+- We create a `cons_server.py` script to consume data produced from the kafka producer. Running it gets the follwoing results: 
+
+![consumer](images/consumer_data.png)
 
 - Check if the server is correctly implemented by running the command: 
 
@@ -56,10 +56,6 @@ We get the following output:
 
 ![kafka consumer](images/kafka_data.png)
 
-- We create a `data_consumer.py` script to consume data produced from the kafka producer. Running it gets the follwoing results: 
-
-![consumer](images/consumer_data.png)
-
-- Finally we do a spark-submit using the following command to obain the requried results.
+- Finally we do a spark-submit using the following command to obtain the requried results.
 
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.0 --master local[4] data_stream.py`
