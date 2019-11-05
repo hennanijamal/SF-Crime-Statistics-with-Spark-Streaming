@@ -10,7 +10,7 @@ In this project, we use real world dataset from the kaggle repositories on San F
 ![Result](images/output.png) 
 
 ### Data consumer 
-![Consumer](images/consumer.png)
+![Consumer_logs](images/consumer.png)
 
 ## Project implementation
 
