@@ -9,7 +9,7 @@ In this project, we use real world dataset from the kaggle repositories on San F
 ### Data Stream
 ![Result](images/output.png) 
 
-### Data consumer 
+### Data consumer(Consumer console logs) 
 ![Consumer_logs](images/consumer.png)
 
 ## Project implementation
